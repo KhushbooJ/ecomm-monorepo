@@ -33,8 +33,8 @@ Modules are built in dependency order: `libs/shared-utils` is installed first, t
 
 | Module | Type | Description |
 |---|---|---|
-| [`libs/shared-utils`](libs/README.md) | Library | Security, exception handling, shared enums |
-| [`apps/order-service`](apps/README.md) | Service | Order management and user registration API |
+| [`libs/shared-utils`](libs/shared-utils/README.md) | Library | Security, exception handling, shared enums |
+| [`apps/order-service`](apps/order-service/README.md) | Service | Order management and user registration API |
 
 ## Database Setup
 
