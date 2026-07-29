@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: shared-utils
+  data:
+    redis:
+      host:localhost
+      port:6379
+
+
+
