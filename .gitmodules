@@ -1,6 +1,8 @@
 [submodule "apps/order-service"]
 	path = apps/order-service
 	url = https://github.com/KhushbooJ/order-service
+	branch = main
 [submodule "libs/shared-utils"]
 	path = libs/shared-utils
 	url = https://github.com/KhushbooJ/ecomm-shared-utils
+	branch = main
