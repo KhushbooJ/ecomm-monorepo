@@ -24,7 +24,8 @@
 		<java.version>17</java.version>
 		<maven.compiler.source>${java.version}</maven.compiler.source>
 		<maven.compiler.target>${java.version}</maven.compiler.target>
-		<spring-boot.version>3.3.0</spring-boot.version>
+		<spring-boot.version>4.1.0</spring-boot.version>
+		<spring-cloud.version>2025.1.2</spring-cloud.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -36,15 +37,18 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+			<!-- Spring Cloud Dependencies BOM -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
 			<!-- Internal Inter-Module Versions -->
 			<dependency>
 				<groupId>com.khush</groupId>
 				<artifactId>shared-utils</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.khush</groupId>
-				<artifactId>security</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 		</dependencies>
