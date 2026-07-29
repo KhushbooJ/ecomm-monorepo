@@ -45,12 +45,6 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
-			<!-- Internal Inter-Module Versions -->
-			<dependency>
-				<groupId>com.khush</groupId>
-				<artifactId>shared-utils</artifactId>
-				<version>${project.version}</version>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>
