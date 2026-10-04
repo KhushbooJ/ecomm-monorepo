@@ -1,0 +1,19 @@
+services:
+  inventory-db:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: inventory
+      POSTGRES_USER: kj
+      POSTGRES_PASSWORD:
+    volumes:
+      - inventory-data:/var/lib/postgresql/data
+      - ./services/inventory/db/init:/docker-entrypoint-initdb.d
+
+  inventory-service:
+    build: ./services/inventory
+    depends_on: [ inventory-db ]
+    environment:
+      DATABASE_URL: postgres://inventory_svc:secret@inventory-db:5432/inventory
+
+volumes:
+  inventory-data:

@@ -1,0 +1,3 @@
+# root docker-compose.yml
+include:
+  - apps/order-service/compose.yml
